@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input[type=text],select{
+        .formelement{
             width: 100%;
             padding: 10px;
             border-radius: 10px;
             margin: 8px 0px;
             box-sizing: border-box;
         }
-        input[type=text]:focus{
+        /* input[type=text],select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        } iki şekilde de ifade edilebilir */
+        .formelement:focus{
             background-color: lightgreen;
         }
-        input[type=submit]{
+        .formsubmit{
             width: 100%;
             padding: 13px;
             background-color: lightgreen;
@@ -29,24 +36,24 @@
             padding: 20px;
             margin: 20px 260px;
         }
-        select:focus{
+        /* select:focus{
             background-color:lightgreen;
-        }
+        } */
     </style>
 </head>
 <body>
     <form class="formGeneral">
         <label>ad</label>
-        <input type="text" name="fistname" placeholder="adınızı giriniz">
+        <input type="text" class=formelement name="fistname" placeholder="adınızı giriniz">
         <label>soyad</label>
-        <input type="text" name="secondname"placeholder="soyadınızı giriniz">
+        <input type="text" class=formelement name="secondname"placeholder="soyadınızı giriniz">
         <label>ülkeler</label>
-        <select name="country" id="">
+        <select name="country" class=formelement id="">
             <option value="">türkiye</option>
             <option value="">francais</option>
             <option value="">England</option>
         </select>
-        <input type="submit"value="kaydet">
+        <input class="formsubmit" type="submit"value="kaydet">
     </form>
 </body>
 </html>

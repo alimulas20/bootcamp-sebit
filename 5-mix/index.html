@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    .header{
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        background-color: pink;
+        align-items: center;
+        padding: 0px 15px;
+    }
+    .header img{
+        border-radius: 5px;
+    }
+    .header a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-right: 13px;
+    }
+    .imgMainDiv{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    .imgdiv{
+        border: 1px solid black;
+        width: 200px;
+        border-radius: 30px;
+        margin-right: 30px;
+    }
+    .imgdiv img{
+        border-radius: 30px 30px 0px 0px;
+        width: 100%;
+    }
+    .imgdiv h3{
+        text-align: center;
+    }
+    .imgdiv p{
+        padding: 0px 20px;
+    }
+    .formelement{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        }
+        /* input[type=text],select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        } iki şekilde de ifade edilebilir */
+        .formelement:focus{
+            background-color: lightgreen;
+        }
+        .formsubmit{
+            width: 100%;
+            padding: 13px;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 15px;
+            color: white;
+        }
+        .formGeneral{
+            background-color: lightgray;
+            padding: 20px;
+            margin: 10px 350px;
+        }
+        .footer{
+            background-color: lightcoral;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            .imgMainDiv{
+                flex-direction: column;
+            }
+            .imgdiv{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .formGeneral{
+            
+            margin: 0px;
+        }
+        }
+ </style>
+    
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="1.jpg" alt="" width="50px">
+        </div>
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        
+    </div>
+    <div style="height: 400px; background-image: url('banner.jpg'); position: relative;">
+        <div style="position: absolute;
+        top:38px;
+        /* left:204px;
+        right: 90; */
+        text-align: center;
+        width: 100%;
+        ">
+        <h3>Efsane Banner</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quibusdam quasi corrupti! Recusandae amet minus natus modi asperiores dolor minima vero officia ipsa, culpa beatae obcaecati sapiente voluptate eaque magni.</p>
+        </div>
+    </div>
+    <div class="imgMainDiv" >
+        <div class="imgdiv">
+            <img src="1.jpg">
+            <h3>Efso Başlık</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et iusto deserunt a officia laudantium harum aliquam amet dolorum ab exercitationem fuga, quam eveniet assumenda magnam neque ut reiciendis soluta?</p>
+        </div>
+        <div class="imgdiv">
+            <img src="2.jpg">
+            <h3>Efso Başlık</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et iusto deserunt a officia laudantium harum aliquam amet dolorum ab exercitationem fuga, quam eveniet assumenda magnam neque ut reiciendis soluta?</p>
+        </div>
+        <div class="imgdiv">
+            <img src="3.jpg">
+            <h3>Efso Başlık</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et iusto deserunt a officia laudantium harum aliquam amet dolorum ab exercitationem fuga, quam eveniet assumenda magnam neque ut reiciendis soluta?</p>
+        </div>
+        <div class="imgdiv">
+            <img src="4.jpg">
+            <h3>Efso Başlık</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel et iusto deserunt a officia laudantium harum aliquam amet dolorum ab exercitationem fuga, quam eveniet assumenda magnam neque ut reiciendis soluta?</p>
+        </div>
+    </div>
+    <form class="formGeneral">
+        <label>Ad</label>
+        <input type="text" class=formelement name="fistname" placeholder="adınızı giriniz">
+        <label>Soyad</label>
+        <input type="text" class=formelement name="secondname"placeholder="soyadınızı giriniz">
+        <label>Ülkeler</label>
+        <select name="country" class=formelement id="">
+            <option value="">Türkiye</option>
+            <option value="">Francais</option>
+            <option value="">England</option>
+        </select>
+        <input class="formsubmit" type="submit"value="kaydet">
+    </form>
+    <div class="footer">
+        <h3>Frontend && Tüm Hakları Saklıdır</h3>
+    </div>
+
+</body>
+</html>
