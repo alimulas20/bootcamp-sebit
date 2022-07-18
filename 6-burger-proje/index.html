@@ -14,9 +14,6 @@
         align-items: center;
         padding: 0px 15px;
     }
-    .header img{
-        border-radius: 5px;
-    }
     .header a{
         text-decoration: none;
         color: black;
@@ -27,6 +24,9 @@
         display: flex;
         justify-content: center;
         margin: 30px 0px;
+    }
+    .imgInnerDiv{
+        display: flex;
     }
     .imgdiv{
         border: 1px dashed black;
@@ -45,12 +45,27 @@
     }
     .imgdiv p{
         padding: 0px 20px;
+        text-align: center;
     }
     .imgdiv h1{
         color: red;
-        text-align: center ;
+        text-align: center;
         font-weight: 100;
     }
+    .button{
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            width: 100px;
+            padding:10px 15px;
+            
+        }
+        .buttonDiv{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
         .footer{
             background-color: lightcoral;
             height: 150px;
@@ -72,30 +87,41 @@
             margin-top: 10px;
             font-size: 18px;
         }
-        .button{
-            background-color: green;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            width: 100px;
-            padding:10px 15px;
-            
-        }
-        .buttonDiv{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
+        
+        /* tablet için 900px */
         @media only screen and (max-width: 600px) {
             .imgMainDiv{
+                flex-direction: column;
+            }
+            .imgInnerDiv{
                 flex-direction: column;
             }
             .imgdiv{
                 width: 100%;
                 margin-bottom: 30px;
             }
+            .header{
+                padding: 0px 5px;
+            }
+            .header a{
+                margin-right: 5px;
+            }
            
         }
+        @media only screen and (max-width: 900px) {
+            .imgMainDiv{
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+            }
+            .MainDiv{
+                margin-top: 30px;
+            }
+            .imgdiv{
+                margin-bottom: 30px;
+            }
+        }
+
  </style>
     
 </head>
@@ -123,91 +149,101 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quibusdam quasi corrupti! Recusandae amet minus natus modi asperiores dolor minima vero officia ipsa, culpa beatae obcaecati sapiente voluptate eaque magni.</p>
         </div>
     </div>
-    <div class="imgMainDiv" >
-        <div class="imgdiv">
-            <img src="burger.jpg">
-            <h3>Kasap Burger</h3>
-            <p>Bol Malzemeli Efsane Burger</p>
-            <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-            <div class="buttonDiv">
-                <input type="submit" value="Satın Al" class="button">
+    <div class="MainDiv">
+        <div class="imgMainDiv" >
+            <div class="imgInnerDiv">
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
             </div>
-            
-        </div>
-        <div class="imgdiv">
-            <img src="burger.jpg">
-            <h3>Kasap Burger</h3>
-            <p>Bol Malzemeli Efsane Burger</p>
-            <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-            <div class="buttonDiv">
-                <input type="submit" value="Satın Al" class="button">
+            <div class="imgInnerDiv">
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
             </div>
-            
         </div>
-        <div class="imgdiv">
-            <img src="burger.jpg">
-            <h3>Kasap Burger</h3>
-            <p>Bol Malzemeli Efsane Burger</p>
-            <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-            <div class="buttonDiv">
-                <input type="submit" value="Satın Al" class="button">
+        <div class="imgMainDiv" >
+            <div class="imgInnerDiv">
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
             </div>
-           
-        </div>
-        <div class="imgdiv">
-            <img src="burger.jpg">
-            <h3>Kasap Burger</h3>
-            <p>Bol Malzemeli Efsane Burger</p>
-            <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-            <div class="buttonDiv">
-                <input type="submit" value="Satın Al" class="button">
+            <div class="imgInnerDiv">
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
+                <div class="imgdiv">
+                    <img src="burger.jpg">
+                    <h3>Kasap Burger</h3>
+                    <p>Bol Malzemeli Efsane Burger</p>
+                    <h1>45.99 <span style="font-style: italic;">TL</span></h1>
+                    <div class="buttonDiv">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                    
+                </div>
             </div>
-            
         </div>
     </div>
-</div>
-<div class="imgMainDiv" >
-    <div class="imgdiv">
-        <img src="burger.jpg">
-        <h3>Kasap Burger</h3>
-        <p>Bol Malzemeli Efsane Burger</p>
-        <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-        <div class="buttonDiv">
-            <input type="submit" value="Satın Al" class="button">
-        </div>
-        
-    </div>
-    <div class="imgdiv">
-        <img src="burger.jpg">
-        <h3>Kasap Burger</h3>
-        <p>Bol Malzemeli Efsane Burger</p>
-        <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-        <div class="buttonDiv">
-            <input type="submit" value="Satın Al" class="button">
-        </div>
-       
-    </div>
-    <div class="imgdiv">
-        <img src="burger.jpg">
-        <h3>Kasap Burger</h3>
-        <p>Bol Malzemeli Efsane Burger</p>
-        <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-       <div class="buttonDiv">
-        <input type="submit" value="Satın Al" class="button">
-       </div>
-        
-    </div>
-    <div class="imgdiv">
-        <img src="burger.jpg">
-        <h3>Kasap Burger</h3>
-        <p>Bol Malzemeli Efsane Burger</p>
-        <h1>45.99 <span style="font-style: italic;">TL</span></h1>
-        <div class="buttonDiv">
-            <input type="submit" value="Satın Al" class="button">
-        </div>
-        
-    </div>
-</div>
+    
     <div class="footer">
         <!-- li ile yapılabilir -->
         <div class="footerlist">
