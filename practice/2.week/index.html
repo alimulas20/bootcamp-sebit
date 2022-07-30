@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+        .headerBot{
+            display: flex;
+            align-items: center;
+        }
+        .header a{
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .header img{
+            border: none;
+            border-radius: 50%;
+        }
+        .container{
+            background-color:cadetblue;
+            padding: 30px 10px;
+        }
+        .container h1{
+            text-align: center;
+            margin-top: 0px;
+            color: white;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            display: flex; 
+            flex-direction: column;
+            padding: 15px;
+            background-color: blanchedalmond;
+            border-radius: 15px;
+            margin: 10px 10px;
+            
+            
+        }
+        .cardTop{
+            display: flex;
+            justify-content:start;
+            align-items: center;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-around;
+        }
+        .buttons button{
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            background-color: cadetblue;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .footer{
+            display: flex;
+            background-color:aquamarine;
+            padding: 20px;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .cardBot{
+            text-align: center;
+        }
+        .footerList{
+            display: flex;
+        }
+        .footerAltList{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+        }
+        .footer a{
+            text-decoration: none;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .footer img{
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+         .footerList{
+            flex-direction: column;
+         }   
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light px-2 header" >
+        <a class="navbar-brand" href="#">
+            <img src="logo.jpg" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Giriş Yap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kayıt Ol</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkımızda</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <h1>Aradığın Herşey Burda</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="card">
+                    <div class="cardTop">
+                        <div><img src="kullanıcı.png" width="30px" height="30px" style="border-radius: 50%; margin-right: 15px;"></div>
+                        <div> <a href="" style="text-decoration: none ;color:black">Fake Kullanıcı</a></div>
+                     </div>
+                     <div class="cardBot">
+                         <img src="ayakkabı.jpg" width="100%">
+                         <h3>45.99 TL</h3>
+                         <p>NIKE/Ayakkabı</p>
+                         <div class="buttons">
+                             <div>
+                                 <button>Hızlı Al</button>
+                             </div>
+                             <div>
+                                 <button><img src="Sepet.png" width="15px" style="margin-right: 5px;">Sepete Ekle</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="logo.jpg" style="border: none; border-radius: 50% " width="150px" height="150px" >
+        <div class="footerList">
+            <div class="footerAltList">
+                <h3>Kıyafet.Com</h3>
+                <a href="">Blog</a>
+                <a href="">Nasıl Çalışır</a>
+                <a href="">Yardım</a>
+            </div>
+            <div class="footerAltList">
+                <h3>Kategoriler</h3>
+                <a href="">Ayakkabı</a>
+                <a href="">Çanta</a>
+                <a href="">Elbise</a>
+            </div>
+            <div class="footerAltList">
+                <h3>Sosyal Medya</h3>
+                <a href="">
+                    <img src="facebook.png" width="30px">
+                    Facebook
+                </a>
+                <a href="">
+                    <img src="Instagram.png" width="30px">
+                    Instagram
+                </a>
+                <a href="">
+                    <img src="twitter.png" width="30px">
+                    Twitter
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
